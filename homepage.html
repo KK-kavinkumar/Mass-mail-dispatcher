@@ -1,0 +1,73 @@
+<!-- File: index.html (Home Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass Mail Dispatcher</title>
+    <style>
+        /* Styling for the home page */
+        body {
+            display: flex;
+            justify-content: center;
+        
+            align-items: center;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        
+        #heading {
+         color: 
+         #231b1b;
+         margin-left: .1em;
+         font-size: 6em;
+         font-weight: bolder;
+         position: fixed;
+         margin-top: -10cm;
+         padding: 15px 20px;
+        }
+
+        span {
+         font-weight: 200;
+         margin: 0.4em 0;
+         z-index: 12;
+         position: absolute;
+         margin-top: -6cm;
+         margin-left: 0em;
+         font-size: 18px;
+         color: #000000;
+         font-size: 18px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #debb5082;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 0em;
+            margin-top: 30em;
+        }
+        button:hover {
+            background-color: #b16f42;
+        }
+    </style>
+</head>
+<body background="Images/0000.png"  >
+    <p id="heading"> MASS MAIL DISPATCHER </p>
+    <span id="span">Hello There!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to The Page.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is the Page for Bulk Mail Dispatcher&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If You Want to Send Mail Click on 'ENTER'.</span>
+    <!-- Button to open the form page -->
+    <button onclick="openFormPage()">ENTER</button>
+    
+    <script>
+        // JavaScript function to open the form page
+        function openFormPage() {
+            window.location.href = 'index.html'; // Navigate to the form.html page
+        }
+    </script>
+</body>
+</html>
