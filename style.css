@@ -3,12 +3,11 @@ body {
   font-family: Arial, sans-serif;
   background-color: #e6e6e6;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+  display: flex;
   background-size: cover;
   position:relative;
   color: #000000;
-  overflow-y: hidden;
-  z-index: 2;
+  
 }
 
 
@@ -20,7 +19,7 @@ color:
 margin-right: 5em;
 font-size: 8em;
 font-weight: bold;
-position: fixed;
+position: absolute;
 margin-top: .2em;
 
 }
@@ -28,18 +27,19 @@ margin-top: .2em;
 
 /* Style the form container */
 form {
-  max-width: 600px;
-  margin-left: .1em;
+  max-width: 5000px;
+  margin-left: 55em;
   margin-top: 2em;
   /* From https://css.glass */
   background: rgba(36, 36, 36, 0.1);
-  border-radius: 16px;
+  border-radius: 26px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.7px);
   -webkit-backdrop-filter: blur(2.7px);
   border: 1px solid rgba(255, 255, 255, 0.03);
-  padding: 20px;
-  /* border-radius: 10px; */
+  padding: 16px;
+  overflow-y: auto;
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: relative;
 }
@@ -56,7 +56,7 @@ label {
 input[type="email"],
 textarea {
   width: 95%;
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #767a7d;
   border-radius: 5px;
@@ -68,7 +68,7 @@ textarea {
   /* Style text inputs and text areas */
   #subject{
     width: 89%;
-    padding: 10px;
+    padding: 3px;
     margin-bottom:-1em;
     border: 1px solid #767a7d;
     border-radius: 5px;
@@ -85,6 +85,26 @@ input[type="file"] {
   margin-bottom: 12px;
   color: #393E41;
   
+}
+
+#banner-image {
+  position: absolute;
+  top: 22em;
+  left: 13em;
+  height: 5cm; 
+  width: 6cm; 
+  object-fit: cover;
+  z-index: 1;
+}
+
+#icon-image {
+  position: absolute;
+  top: 27.5em;
+  left: 3em;
+  height: 5cm; 
+  width: 6cm; 
+  object-fit: cover
+  z-index 1;
 }
 
 /* Style form submit button */
@@ -154,21 +174,7 @@ textarea:focus {
   overflow: auto;
 }
 
-
-/*.img1{
-height:250px; 
-margin-top: -15em;
-position: fixed;
-}*/
-
-/*.img2{
-height:200px;
-margin-top:-23em;
-position: absolute;
-margin-left: 13.3em;
-}*/
-
-h1,h2 {
+h1 {
 font-weight: 200;
 margin: 0.4em 0;
 z-index: 12;
@@ -177,7 +183,7 @@ margin-top: 23em;
 margin-left:14em ;
 }
 h1 { font-size: 18px; }
-h2 {
+h1 {
 color: #888;
 font-size: 18px;
 }
